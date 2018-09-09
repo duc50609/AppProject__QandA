@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e7e9c8"
+    android:orientation="vertical"
+    tools:context=".test4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="  輸入題目內容"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="go_back"
+                android:text="返回"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="題目四"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/but_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="go_next"
+                android:text="下一題"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="290dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="290dp">
+
+                <RadioButton
+                    android:id="@+id/rb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/rb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/answer_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="   選項一"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/answer_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="  選項二"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/answer_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="  選項三"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
